@@ -1,4 +1,4 @@
-# TahinaRakoto-IDP
+# Internal Developer Platform
 
 This project installs a ready-to-use Internal Developer Platform on an
 existing Kubernetes cluster. It combines
