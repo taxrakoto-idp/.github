@@ -1,60 +1,48 @@
 # TaxRakoto IDP
 
-A ready-to-use Internal Developer Platform for an existing Kubernetes cluster,
-built with Backstage, Jenkins, Argo CD, and Helm.
+Welcome to **TaxRakoto IDP**, a public portfolio organization focused on
+Platform Engineering, Developer Experience, and cloud-native automation.
 
-The project demonstrates how a platform team can provide one developer portal
-and an automated path from service creation to deployment.
+The repositories in this organization explore how internal platforms can make
+software delivery simpler, more consistent, and easier for development teams to
+use.
 
-## What it provides
+## Featured project
 
-- **Backstage** for the software catalog, documentation, and service creation
-- **Jenkins** for reusable continuous-integration pipelines
-- **Argo CD** for automated GitOps delivery and drift reconciliation
-- **Helm** for consistent application and platform deployments
-- **Software Templates** that create platform-ready application repositories
+Our main project is a ready-to-use Internal Developer Platform designed for an
+existing Kubernetes cluster. It demonstrates the complete journey from creating
+a service to building and deploying it through a standardized developer
+workflow.
 
-```mermaid
-flowchart LR
-    Developer["Developer"] --> Backstage["Backstage"]
-    Backstage --> Repository["Application repository"]
-    Repository --> Jenkins["Jenkins"]
-    Jenkins --> Registry["Container registry"]
-    Jenkins --> GitOps["GitOps repository"]
-    GitOps --> ArgoCD["Argo CD"]
-    ArgoCD --> Kubernetes["Kubernetes"]
-```
+**[Explore the platform →](https://github.com/taxrakoto-idp/platform)**
 
-## Start here
+The platform repository is the canonical entry point for:
 
-Read the [platform overview](https://github.com/taxrakoto-idp/platform), or
-install the project by cloning the public
-[argo repository](https://github.com/taxrakoto-idp/argo):
+- Project goals and capabilities
+- Architecture and technology choices
+- Installation and configuration
+- The developer golden path
+- Repository responsibilities
+- Security considerations and project status
 
-```bash
-git clone https://github.com/taxrakoto-idp/argo.git
-cd argo
-./bootstrap-argocd.sh
-```
+## Areas of focus
 
-No GitHub credentials or SSH key are needed to read the public GitOps
-repositories.
+- Platform Engineering and self-service developer workflows
+- Internal Developer Portals and software catalogs
+- GitOps and declarative delivery
+- Continuous integration and deployment automation
+- Kubernetes application delivery
+- Reusable templates and standardized golden paths
 
-## Repositories
+## About this organization
 
-| Repository | Responsibility |
-| --- | --- |
-| [`platform`](https://github.com/taxrakoto-idp/platform) | Main documentation, architecture, and installation guide |
-| [`argo`](https://github.com/taxrakoto-idp/argo) | Argo CD installation and GitOps bootstrap |
-| [`deploy`](https://github.com/taxrakoto-idp/deploy) | Helm charts and desired Kubernetes state |
-| [`backstage`](https://github.com/taxrakoto-idp/backstage) | Backstage application, catalog, and integrations |
-| [`templates`](https://github.com/taxrakoto-idp/templates) | Backstage Software Templates and skeletons |
-| [`jenkins`](https://github.com/taxrakoto-idp/jenkins) | Jenkins Configuration as Code and shared library |
+This organization is maintained as a practical engineering portfolio. Its
+projects emphasize working implementations, clear technical decisions, and a
+developer experience that can be understood and reproduced.
 
-> The project installs onto a cluster supplied by the user. Kubernetes cluster
-> provisioning is intentionally outside its scope.
+Start with the **[platform repository](https://github.com/taxrakoto-idp/platform)**
+for the complete project documentation and links to the supporting repositories.
 
 ## Status
 
-This portfolio project is under active development. Each repository documents
-which capabilities are implemented and which remain on the roadmap.
+The platform and its supporting components are under active development.
