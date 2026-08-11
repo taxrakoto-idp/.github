@@ -1,6 +1,6 @@
 # TaxRakoto IDP
 
-Welcome to **TaxRakoto IDP**, a public portfolio organization focused on
+Welcome to **TaxRakoto IDP**, a public engineering project focused on
 Platform Engineering, Developer Experience, and cloud-native automation.
 
 The repositories in this organization explore how internal platforms can make
@@ -36,9 +36,9 @@ The platform repository is the canonical entry point for:
 
 ## About this organization
 
-This organization is maintained as a practical engineering portfolio. Its
-projects emphasize working implementations, clear technical decisions, and a
-developer experience that can be understood and reproduced.
+This organization maintains a practical Internal Developer Platform reference
+implementation. Its projects emphasize working software, clear technical
+decisions, and a developer experience that can be understood and reproduced.
 
 Start with the **[platform repository](https://github.com/taxrakoto-idp/platform)**
 for the complete project documentation and links to the supporting repositories.
